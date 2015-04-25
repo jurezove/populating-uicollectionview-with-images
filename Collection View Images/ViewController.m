@@ -17,9 +17,9 @@
 
 @end
 
-static NSString *directoryName = @"Images";
-
 @implementation ViewController
+
+static NSString *directoryName = @"Images";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
