@@ -36,13 +36,6 @@ static NSString *directoryName = @"Images";
     [self.collectionView reloadData];
 }
 
-#pragma mark - Extra - set collection view's width and height to fit screen
-
-- (void)viewDidLayoutSubviews {
-    [super viewDidLayoutSubviews];
-    self.flowLayout.itemSize = self.view.bounds.size;
-}
-
 - (NSString *)fullPathFor:(NSString *)filename {
     return [[[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:directoryName] stringByAppendingPathComponent:filename];
 }
@@ -50,6 +43,13 @@ static NSString *directoryName = @"Images";
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Extra - set collection view's width and height to fit screen
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    self.flowLayout.itemSize = self.view.bounds.size;
 }
 
 #pragma mark - UICollectionViewDataSource
