@@ -31,7 +31,7 @@ static NSString *directoryName = @"Images";
     for (NSString *filename in filenames) {
         [mutableImages addObject:[UIImage imageWithContentsOfFile:[self fullPathFor:filename]]];
     }
-    self.images = [NSArray arrayWithArray:mutableImages];
+    self.images = [NSArray arrayWithArray:mutableImages];
     
     [self.collectionView reloadData];
 }
