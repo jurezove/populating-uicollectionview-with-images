@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CustomCollectionViewCell.h
 //  Collection View Images
 //
 //  Created by Jure Zove on 25/04/15.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UICollectionViewController
+@interface CustomCollectionViewCell : UICollectionViewCell
 
+@property (nonatomic, weak) IBOutlet UIImageView *imageView;
 
 @end
-
